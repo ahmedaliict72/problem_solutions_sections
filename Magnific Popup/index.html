@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Section 1 Design</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+	<div class="container bg-primary text-white">
+		<div class="row">
+			<div class="col-md-4">
+				<h2 class="counter">40</h2>
+			</div>
+			<div class="col-md-4">
+				<h2>50</h2>
+			</div>
+			<div class="col-md-4">
+				<h2>60</h2>
+			</div>
+		</div>
+	</div>
+
+
+	<a class="test-popup-link" href="download.jpg">
+		<img src="download.jpg" height="200px" width="200px">
+	</a>
+
+	<div class="parent-container animate__animated animate__backInDown">
+	  <a href="download.jpg">
+	  	<img src="download.jpg" height="200px" width="200px">
+	  </a>
+	  <a href="download.jpg">
+	  	<img src="download.jpg" height="200px" width="200px">
+	  </a>
+	  <a href="download.jpg">
+	  	<img src="download.jpg" height="200px" width="200px">
+	  </a>
+	</div>
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="jquery.magnific-popup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+
+<script type="text/javascript">
+	$('.test-popup-link').magnificPopup({
+  type: 'image'
+  // other options
+});
+
+	$('.parent-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+});
+</script>
+
+</body>
+</html>
